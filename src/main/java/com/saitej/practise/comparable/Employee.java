@@ -1,7 +1,5 @@
 package com.saitej.practise.comparable;
 
-import java.util.Comparator;
-
 public class Employee  implements Comparable<Employee> {
 
     private int id;
@@ -69,7 +67,7 @@ public class Employee  implements Comparable<Employee> {
         return 0;                   // descending order
     }*/
 
-        //  Type: 2 ( using conditional Operator)
+        //  Type: 2 ( using ternary Operator)
 
        // return this.getSal() < emp.getSal() ? 1 : this.getSal() > emp.getSal() ? -1 : 0; // descending order
        // return this.getSal() < emp.getSal() ? -1 : this.getSal() > emp.getSal() ? 1 : 0;  // ascending order
