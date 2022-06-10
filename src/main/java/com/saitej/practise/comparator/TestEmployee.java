@@ -1,8 +1,6 @@
 package com.saitej.practise.comparator;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class TestEmployee {
@@ -50,11 +48,12 @@ public class TestEmployee {
 
    //     empList.sort(Comparator.comparing(employee -> employee.getId()));
 
-     //   empList.sort(Comparator.comparing(Employee::getSal));
+       // empList.sort(Comparator.comparing(Employee::getSal).reversed());
+
 
       //  empList.sort(new SalComparator());
 
-        empList.sort((o1, o2) -> o1.getSal()<o2.getSal()?1:o1.getSal()>o2.getSal()?-1:0);
+
 
 
 
@@ -69,6 +68,9 @@ public class TestEmployee {
 
         empList.forEach(System.out::println);
         System.out.println("After sorting...........................");
+
+        empList.sort((o1, o2) -> o1.getSal()<o2.getSal()?1:o1.getSal()>o2.getSal()?-1:0);
+
         empList.forEach(System.out::println);
 
     }
