@@ -1,4 +1,4 @@
-package com.saitej;
+package com.saitej.arraylist;
 
 import java.util.Arrays;
 import java.util.Collections;
